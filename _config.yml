@@ -1,0 +1,7 @@
+title: MeetMi
+description: Privacy Policy and Support for MeetMi Managed AI on the Mac App Store.
+# `layout: default` has to come from somewhere; this is one of the themes
+# GitHub Pages builds without a Gemfile.
+theme: jekyll-theme-minimal
+exclude:
+  - README.md
