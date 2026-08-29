@@ -67,7 +67,7 @@ System permission is not consent from other participants. The user must give any
 - iOS Managed is not in the first store release.
 - Mainland China is excluded until a separate legal assessment is complete.
 - Simulator builds cannot run on-device speech models.
-- GitHub Pages URLs become publicly reachable only after stage 9 enables Pages.
+- These pages are published at https://kinlu.github.io/meetmi/ and are publicly reachable.
 
 ## Review path
 

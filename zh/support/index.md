@@ -67,7 +67,7 @@ MeetMi 在设备上转写会议；用户同意后，会把转写、问题和相�
 - iOS Managed 不进入首发商店。
 - 中国大陆在独立法律评估完成前排除。
 - 模拟器没有本机语音模型。
-- GitHub Pages URL 只有在阶段 9 启用 Pages 后才对外可访问。
+- 这些页面已发布在 https://kinlu.github.io/meetmi/ ，对外可访问。
 
 ## 审核路径
 

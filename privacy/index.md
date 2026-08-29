@@ -6,7 +6,7 @@ title: MeetMi Privacy Policy
 # MeetMi Privacy Policy
 
 Version: `managed-ai-apple-pages-v1`<br>
-Effective: to be set when GitHub Pages is enabled in stage 9<br>
+Effective: 2026-08-29<br>
 Applies to: MeetMi Managed AI distributed through the Apple App Store, beginning with macOS. A later iOS/iPadOS Managed app would use the same policy unless a newer version is published.
 
 Developer / legal entity, postal address, and privacy contact will be filled when the Apple Developer Program account is opened. Until then this page is the canonical draft that App and store materials must match.
@@ -117,4 +117,4 @@ Updates will identify a version and effective date. Material changes to cloud-AI
 
 - Privacy contact: to be published with the Apple Developer Program legal entity
 - Support: [Support page](../support/)
-- Public Privacy URL after stage 9: `https://kinlu.github.io/meetmi/privacy/`
+- Public Privacy URL: `https://kinlu.github.io/meetmi/privacy/`

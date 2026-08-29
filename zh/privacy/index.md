@@ -6,7 +6,7 @@ title: MeetMi 隐私政策
 # MeetMi 隐私政策
 
 版本：`managed-ai-apple-pages-v1`<br>
-生效日期：阶段 9 启用 GitHub Pages 时填写<br>
+生效日期：2026-08-29<br>
 适用范围：通过 Apple App Store 分发的 MeetMi Managed AI，首发为 macOS。未来 iOS/iPadOS Managed 版沿用本政策，除非另行发布新版本。
 
 开发者/经营主体、地址和隐私联系方式将在开通 Apple Developer Program 后回填。在此之前，本页是 App 与商店材料必须对齐的权威草案。
@@ -117,4 +117,4 @@ MeetMi 不以儿童为目标，不进行跨 App Tracking，不出售个人信息
 
 - 隐私联系：随 Apple Developer Program 经营主体一并发布
 - 支持：[支持页面](../support/)
-- 阶段 9 后的公开 Privacy URL：`https://kinlu.github.io/meetmi/zh/privacy/`
+- 公开 Privacy URL：`https://kinlu.github.io/meetmi/zh/privacy/`
