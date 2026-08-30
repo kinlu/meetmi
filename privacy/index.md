@@ -55,7 +55,7 @@ Web search is **off by default**, is stored as its own consent record separate f
 
 **Renewed consent.** A change to the search provider, its domain, or the web-search policy version invalidates existing web-search consent and requires a fresh acknowledgement. Such a change does not affect the recording notice or Managed AI consent.
 
-**Availability.** Web search becomes available in the App Store build once the production relay is live; until then the app states plainly that the build does not search the web. It is off by default in any case, and stays off until the user turns it on and acknowledges the retention notice above.
+**Availability.** The App Store build connects to the production relay, so web search is available in it. It is off by default and stays off until the user turns it on and acknowledges the retention notice above.
 
 ## 5. Apple purchases, entitlement, and Credit
 
