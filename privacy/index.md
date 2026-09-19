@@ -5,9 +5,9 @@ title: MeetMi Privacy Policy
 
 # MeetMi Privacy Policy
 
-Version: `managed-ai-apple-pages-v1`<br>
-Effective: 2026-08-29<br>
-Applies to: MeetMi Managed AI distributed through the Apple App Store, beginning with macOS. A later iOS/iPadOS Managed app would use the same policy unless a newer version is published.
+Version: `managed-ai-apple-pages-v2`<br>
+Effective: 2026-09-19 (v1: 2026-08-29)<br>
+Applies to: MeetMi Managed AI distributed through the Apple App Store on macOS and iPhone. Both apps are one App Store record with one shared subscription and use this same policy.
 
 Developer / legal entity, postal address, and privacy contact will be filled when the Apple Developer Program account is opened. Until then this page is the canonical draft that App and store materials must match.
 
@@ -21,11 +21,11 @@ MeetMi Local is a separate BYOK product with a different app identity, storage, 
 
 ## 2. On-device processing
 
-- Microphone and, on macOS, system audio are used only after the user starts a meeting.
+- The microphone and, on macOS, system audio are used only after the user starts a meeting.
 - MeetMi does not save or upload raw audio.
 - Speech recognition and subtitle translation use Apple on-device capabilities.
 - Transcripts, advice, analysis, notes, workspace indexes, and extraction caches are stored on the device or in a user-selected workspace by default.
-- A future iOS/iPadOS app uses the microphone only and does not capture audio from other apps.
+- On iPhone the app uses the microphone only and does not capture audio from other apps. A meeting the user has started keeps transcribing while the phone is locked; it stops when the user ends or pauses it.
 
 ## 3. Managed cloud AI
 
@@ -34,7 +34,7 @@ After explicit consent, MeetMi may send the on-device transcript, user questions
 Recipient chain:
 
 ```text
-MeetMi Apple Managed → MeetMi relay → OpenRouter → the ZDR model providers listed in the active in-app policy
+MeetMi (App Store, macOS or iPhone) → MeetMi relay → OpenRouter → the ZDR model providers listed in the active in-app policy
 ```
 
 Current in-app policy names DeepSeek V4 Flash and the ZDR provider range DigitalOcean, Morph, CoreWeave, and Together. The relay does not intentionally persist or log transcripts, questions, document snippets, request bodies, upstream error bodies, or streamed response content. Content is nevertheless processed transiently in relay memory and by OpenRouter and the upstream provider for routing and inference. Upstream services see the relay network address rather than a direct connection from the user's device.
@@ -63,7 +63,7 @@ Web search is **off by default**, is stored as its own consent record separate f
 - Necessary StoreKit transaction JWS data and an opaque association value may be sent to the MeetMi relay to validate subscription, refund, revocation, and restoration and to issue a short-lived access token.
 - JWTs contain no Apple ID, email, full transaction JWS, or OpenRouter key.
 - The service stores entitlement, Credit, and content-free usage against an opaque subject.
-- Version 1 is one monthly subscription with Managed AI allowance that resets with the subscription period.
+- Version 1 is one monthly subscription with Managed AI allowance that resets with the subscription period. The subscription is a universal purchase: one subscription covers the Mac and iPhone apps, and the allowance is one pool shared by both.
 - Version 1 does not sell Credit top-ups. If consumable IAP Credit is introduced later, it will be accounted for separately from monthly allowance and will not expire merely because a monthly period resets.
 - If entitlement or Credit is unavailable, new AI requests stop while on-device transcription, translation, history, and export continue.
 
@@ -83,7 +83,7 @@ Users can clear logs and rebuildable document caches. Production relay configura
 
 Users can decline or withdraw Managed AI consent, disable or withdraw web-search consent, use Apple's subscription management and restore-purchase features, delete meeting history, clear caches and logs, and delete files in their own workspaces.
 
-Removing the app may not remove files in a user-selected workspace. Those files are managed by the user in Finder or the Files app. A request to delete server-side entitlement or usage records is separate from deleting local or workspace files; use the Support page after launch.
+Removing the app may not remove files in a user-selected workspace. Those files are managed by the user in Finder (macOS) or the Files app (iPhone). A request to delete server-side entitlement or usage records is separate from deleting local or workspace files; use the Support page after launch.
 
 ## 9. Third parties, international processing, and security
 

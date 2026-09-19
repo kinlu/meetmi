@@ -5,9 +5,9 @@ title: MeetMi 隐私政策
 
 # MeetMi 隐私政策
 
-版本：`managed-ai-apple-pages-v1`<br>
-生效日期：2026-08-29<br>
-适用范围：通过 Apple App Store 分发的 MeetMi Managed AI，首发为 macOS。未来 iOS/iPadOS Managed 版沿用本政策，除非另行发布新版本。
+版本：`managed-ai-apple-pages-v2`<br>
+生效日期：2026-09-19（v1：2026-08-29）<br>
+适用范围：通过 Apple App Store 分发的 MeetMi Managed AI，macOS 与 iPhone 版。两者是同一条 App Store 记录、共用一份订阅，适用同一份政策。
 
 开发者/经营主体、地址和隐私联系方式将在开通 Apple Developer Program 后回填。在此之前，本页是 App 与商店材料必须对齐的权威草案。
 
@@ -25,7 +25,7 @@ MeetMi Local 是独立的 BYOK 产品：使用不同 App 身份、数据目录�
 - 原始音频不由 MeetMi 保存，也不上传到 MeetMi Worker、OpenRouter 或模型上游。
 - 语音识别与字幕翻译使用 Apple 设备端能力完成。
 - 会议转写、建议、分析、纪要、工作区索引和文档缓存默认保存在设备或用户明确选择的工作区。
-- iOS/iPadOS 版本只使用麦克风，不捕获其他 App 的系统音频。
+- iPhone 版只使用麦克风，不捕获其他 App 的系统音频。用户已开始的会议在锁屏后继续转写，直到用户结束或暂停。
 
 ## 3. Managed 云端 AI
 
@@ -34,7 +34,7 @@ MeetMi Local 是独立的 BYOK 产品：使用不同 App 身份、数据目录�
 数据接收链：
 
 ```text
-MeetMi Apple Managed → MeetMi Worker → OpenRouter → 当前 App 内 policy 列出的 ZDR 模型上游
+MeetMi（App Store 版，macOS 或 iPhone）→ MeetMi Worker → OpenRouter → 当前 App 内 policy 列出的 ZDR 模型上游
 ```
 
 当前 App 内 policy 使用 DeepSeek V4 Flash，以及 DigitalOcean、Morph、CoreWeave、Together 的 ZDR 范围。MeetMi Worker 不主动持久化或记录转写、问题、文档片段、请求正文、上游错误正文或流式响应内容。这些内容仍会在请求处理时短暂经过 Worker 内存，并被 OpenRouter 和上游模型服务商为路由与推理而瞬时处理。上游看到的是 Worker 的网络地址，而不是用户设备直接连接时的公网 IP。
@@ -63,7 +63,7 @@ App 会在发送前展示中转域名、模型、ZDR provider 范围、数据范
 - App 会把必要的 StoreKit transaction JWS 和匿名关联值发送给 MeetMi Worker，用于验证订阅、退款、撤销、恢复和签发短期访问令牌。
 - JWT 不包含 Apple ID、邮箱、完整交易 JWS 或 OpenRouter key。
 - 服务端以不透明 subject 保存权益、额度和无正文 usage 账本。
-- 首发只有一个月订阅，包含会按订阅周期重置的 Managed AI 额度。
+- 首发只有一个月订阅，包含会按订阅周期重置的 Managed AI 额度。订阅是通用购买：一份订阅同时覆盖 Mac 与 iPhone 版，额度是两端共用的同一个池。
 - 首发不出售 Credit 加购。若未来通过 consumable IAP 购买 Credit，该余额将与月度额度分账，不会仅因月份重置而过期。
 - 额度耗尽、权益失效或后端不可用时，新的 AI 请求停止，本地转写、翻译、历史和导出继续。
 
@@ -83,7 +83,7 @@ Debug 详细日志默认关闭。用户开启后，日志可能包含会议内�
 
 用户可以拒绝或撤回 Managed AI 同意，关闭或撤回联网检索同意，使用 Apple 的订阅管理与恢复购买，删除会议归档、缓存和 Debug 日志，以及删除自己工作区中的文件。
 
-删除 App 不一定删除用户选择工作区中的文件；这些文件由用户在 Finder / 文件 App 中管理。服务端权益或用量记录删除与本地/工作区文件删除是不同流程，上线后通过 Support 页面申请。
+删除 App 不一定删除用户选择工作区中的文件；这些文件由用户在 Finder（macOS）或「文件」App（iPhone）中管理。服务端权益或用量记录删除与本地/工作区文件删除是不同流程，上线后通过 Support 页面申请。
 
 ## 9. 第三方、跨境与安全
 
