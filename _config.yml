@@ -1,10 +1,20 @@
 title: MeetMi
-description: A real-time AI copilot for your meetings, on Mac and iPhone.
-# `layout: default` has to come from somewhere; this is one of the themes
-# GitHub Pages builds without a Gemfile. Primer over minimal: minimal's sidebar
-# puts "View the Project on GitHub / maintained by kinlu" beside a privacy
-# policy, which reads like a code project rather than a product's legal page.
-theme: jekyll-theme-primer
-show_downloads: false
+description: >-
+  MeetMi listens to your meeting and helps while it is still happening:
+  on-device transcription, live advice, background analysis and meeting notes.
+
+# The layouts in _layouts/ are the whole design, so no theme is configured.
+# `baseurl` is deliberately unset: GitHub Pages fills it in ("/meetmi" on
+# kinlu.github.io, "" once a CNAME is added), and every internal link goes
+# through `relative_url`, so the same source serves both without edits.
+
+# One place for the store link. `ct=website` is the App Store Connect campaign
+# token; change it here if the site ever needs a different attribution bucket.
+app_store_url: "https://apps.apple.com/app/apple-store/id6806721128?pt=129380201&ct=website&mt=8"
+eula_url: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+
+plugins:
+  - jekyll-sitemap
+
 exclude:
   - README.md

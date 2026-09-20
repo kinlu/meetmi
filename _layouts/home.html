@@ -1,0 +1,203 @@
+---
+layout: base
+---
+{%- include lang.html -%}
+{%- assign h = site.data.home[lang] -%}
+{%- assign store = site.app_store_url | escape -%}
+{%- assign img = '/assets/img/' | relative_url -%}
+{%- if lang == 'zh' -%}{%- assign privacy_url = '/zh/privacy/' | relative_url -%}{%- else -%}{%- assign privacy_url = '/privacy/' | relative_url -%}{%- endif -%}
+
+<section class="hero">
+  <div class="wrap hero-copy">
+    <h1>{{ h.hero.title }}</h1>
+    <p class="lede">{{ h.hero.lede }}</p>
+    <div class="actions">
+      <a class="button" href="{{ store }}">{{ h.hero.cta }}</a>
+      <a class="button button-quiet" href="#features">{{ h.hero.secondary }}</a>
+    </div>
+    <p class="fine">{{ h.hero.note }}</p>
+  </div>
+
+  <div class="wrap">
+    <figure class="stage">
+      <div class="stage-bar">
+        <span class="stage-live">{{ h.stage.status }}</span>
+        <span class="stage-route">{{ h.stage.route }}</span>
+      </div>
+      <div class="stage-panes">
+        <div class="pane">
+          <p class="pane-title">{{ h.stage.transcript_label }}</p>
+          <ol class="lines" lang="en">
+            {%- for line in h.stage.lines %}
+            <li style="--at: {{ line.at }}"><time>{{ line.time }}</time><span>{{ line.text }}</span></li>
+            {%- endfor %}
+          </ol>
+        </div>
+        <div class="pane">
+          <p class="pane-title">{{ h.stage.advice_label }}</p>
+          <div class="cards">
+            {%- for card in h.stage.cards %}
+            <div class="card" style="--at: {{ card.at }}">
+              <p class="card-meta"><span class="card-tag">{{ h.stage.tag }}</span><time>{{ card.time }}</time></p>
+              {%- for point in card.points %}
+              <p><b>{{ point.tag }}</b>{{ point.text }}</p>
+              {%- endfor %}
+            </div>
+            {%- endfor %}
+          </div>
+        </div>
+      </div>
+      <figcaption>{{ h.stage.caption }}</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <div class="wrap">
+    <h2 class="section-title">{{ h.features.title }}</h2>
+
+    <div class="bento">
+      <div class="panel panel-live">
+        <div class="panel-copy">
+          <h3>{{ h.features.live.title }}</h3>
+          <p>{{ h.features.live.body }}</p>
+        </div>
+        <img class="shot" src="{{ img }}mac-live.webp" width="1800" height="1144" alt="{{ h.features.live.alt | escape }}" loading="lazy" decoding="async">
+      </div>
+
+      <div class="panel panel-rise">
+        <div class="panel-copy">
+          <h3>{{ h.features.analysis.title }}</h3>
+          <p>{{ h.features.analysis.body }}</p>
+        </div>
+        <img class="shot" src="{{ img }}mac-analysis.webp" width="1800" height="1259" alt="{{ h.features.analysis.alt | escape }}" loading="lazy" decoding="async">
+      </div>
+
+      <div class="panel panel-rise">
+        <div class="panel-copy">
+          <h3>{{ h.features.ask.title }}</h3>
+          <p>{{ h.features.ask.body }}</p>
+        </div>
+        <img class="shot" src="{{ img }}mac-ask.webp" width="1800" height="999" alt="{{ h.features.ask.alt | escape }}" loading="lazy" decoding="async">
+      </div>
+
+      <div class="panel panel-text">
+        <h3>{{ h.features.ondevice.title }}</h3>
+        <p>{{ h.features.ondevice.body }}</p>
+      </div>
+
+      <div class="panel panel-text">
+        <h3>{{ h.features.bothsides.title }}</h3>
+        <p>{{ h.features.bothsides.body }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tight">
+  <div class="wrap">
+    <div class="panel panel-notes">
+      <div class="panel-copy panel-copy-wide">
+        <h2 class="section-title">{{ h.notes.title }}</h2>
+        <p>{{ h.notes.body }}</p>
+        <p>{{ h.notes.export }}</p>
+      </div>
+      <img class="shot" src="{{ img }}mac-notes.webp" width="1800" height="901" alt="{{ h.notes.alt | escape }}" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="split-copy">
+      <h2 class="section-title">{{ h.material.title }}</h2>
+      <p>{{ h.material.body }}</p>
+      <p>{{ h.material.agents }}</p>
+      <p class="fine">{{ h.material.formats }}</p>
+    </div>
+    <div class="folder" aria-hidden="true">
+      <p class="folder-name">{{ h.material.folder_name }}</p>
+      <ul>
+        {%- for file in h.material.files %}
+        <li{% if file.hint %} class="folder-key"{% endif %}><span>{{ file.name }}</span>{% if file.hint %}<em>{{ file.hint }}</em>{% endif %}</li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section-ruled" id="privacy">
+  <div class="wrap">
+    <h2 class="section-title">{{ h.privacy.title }}</h2>
+    <div class="facts">
+      {%- for item in h.privacy.items %}
+      <div class="fact">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.body }}</p>
+      </div>
+      {%- endfor %}
+    </div>
+    <p><a class="text-link" href="{{ privacy_url }}">{{ h.privacy.link }}</a></p>
+  </div>
+</section>
+
+<section class="section section-tight">
+  <div class="wrap">
+    <div class="panel panel-iphone">
+      <div class="panel-copy">
+        <p class="badge">{{ h.iphone.badge }}</p>
+        <h2 class="section-title">{{ h.iphone.title }}</h2>
+        <p>{{ h.iphone.body }}</p>
+        <p class="fine">{{ h.iphone.note }}</p>
+      </div>
+      <div class="phones">
+        {%- for shot in h.iphone.shots %}
+        <div class="phone"><img src="{{ img }}{{ shot.src }}" width="720" height="1561" alt="{{ shot.alt | escape }}" loading="lazy" decoding="async"></div>
+        {%- endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <div class="wrap split">
+    <div class="split-copy">
+      <h2 class="section-title">{{ h.pricing.title }}</h2>
+      <p>{{ h.pricing.credits }}</p>
+      <p>{{ h.pricing.lapse }}</p>
+    </div>
+    <div class="plan">
+      <p class="plan-price"><strong>{{ h.pricing.amount }}</strong> <span>{{ h.pricing.per }}</span></p>
+      <p class="fine">{{ h.pricing.region }}</p>
+      <ul>
+        {%- for point in h.pricing.points %}
+        <li>{{ point }}</li>
+        {%- endfor %}
+      </ul>
+      <a class="button" href="{{ store }}">{{ h.pricing.cta }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-ruled" id="questions">
+  <div class="wrap split">
+    <h2 class="section-title">{{ h.questions.title }}</h2>
+    <div class="questions">
+      {%- for item in h.questions.items %}
+      <details>
+        <summary>{{ item.q }}</summary>
+        <p>{{ item.a }}</p>
+      </details>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <img class="closing-icon" src="{{ img }}icon-256.png" width="88" height="88" alt="">
+    <h2 class="section-title">{{ h.closing.title }}</h2>
+    <a class="button" href="{{ store }}">{{ h.closing.cta }}</a>
+    <p class="fine">{{ h.closing.note }}</p>
+  </div>
+</section>
