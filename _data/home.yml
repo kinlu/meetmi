@@ -26,31 +26,34 @@ en:
     transcript_label: "Live transcript"
     advice_label: "MeetMi"
     tag: "MeetMi"
-    caption: "Adapted from a real session: a recorded startup lecture playing on a Mac."
+    caption: "Real output, from the same session as the screenshots below: a recorded commencement speech playing on a Mac."
     lines:
-      - { at: 0, time: "23:54:15", text: "It's actually, like, one of your core responsibilities." }
-      - { at: 1, time: "23:54:18", text: "Ben Horowitz likes to say, like, the number one role of the CEO is managing your own psychology." }
-      - { at: 2, time: "23:54:18", text: "It's absolutely true." }
-      - { at: 3, time: "23:54:18", text: "Make sure you do it." }
-      - { at: 5, time: "23:54:45", text: "If you've read my Medium post, you know, it's coming." }
-      - { at: 6, time: "23:54:49", text: "You guys, a second, read this quote." }
-      - { at: 8, time: "23:55:01", text: "So this really resonates with me." }
-      - { at: 9, time: "23:55:08", text: "And one thing I'd point out is, you know, reality of these decisions is pretty nuanced." }
-      - { at: 10, time: "23:55:12", text: "They probably just had, like, really difficult decision in front of them, and people pulling them in multiple directions." }
+      - { at: 0, time: "18:43:23", text: "Reed College at that time offered perhaps the best calligraphy instruction in the country." }
+      - { at: 1, time: "18:43:30", text: "Every poster, every label on every drawer was beautifully hand calligraphed." }
+      - { at: 3, time: "18:43:38", text: "I decided to take a calligraphy class to learn how to do this." }
+      - { at: 4, time: "18:43:46", text: "I learned about seraph and sand seraph typefaces about varying the amount of space between different letter combinations, about what makes great typography great." }
+      - { at: 6, time: "18:44:01", text: "None of this had even a hope of any practical application in my life." }
+      - { at: 7, time: "18:44:09", text: "But 10 years later, when we were designing the first Macintosh computer, it all came back to me." }
+      - { at: 9, time: "18:44:13", text: "It was the first computer with beautiful typography." }
     cards:
-      - at: 4
-        time: "23:54:30"
+      - at: 2
+        time: "18:43:23"
         points:
-          - { tag: "[Fact] ", text: "Dustin cites Ben Horowitz's claim that the CEO's number one role is managing your own psychology, endorsing it as 'absolutely true' — a named quote with no source." }
-          - { tag: "[Advice] ", text: "If you're considering founding, treat managing your own stress as a core job duty, not an afterthought." }
-      - at: 7
-        time: "23:54:52"
+          - { tag: "[Fact] ", text: "He's now introducing the calligraphy example — Reed College offered perhaps the <mark>best calligraphy instruction in the country</mark> at that time." }
+      - at: 5
+        time: "18:43:55"
         points:
-          - { tag: "[Action] ", text: "Dustin references his Medium post and asks the class to read a quote, signaling a specific passage to look up." }
-      - at: 11
-        time: "23:55:15"
+          - { tag: "[Fact] ", text: "He likely means <mark>serif and sans-serif</mark> typefaces — \"seraph\" is a transcription slip for serif." }
+          - { tag: "[Fact] ", text: "He's describing typography basics: letter spacing (kerning/tracking) and what makes great typography, which he learned in the calligraphy class." }
+      - at: 8
+        time: "18:44:10"
         points:
-          - { tag: "[Fact] ", text: "Dustin argues that leadership decisions are usually hard trade-offs made under conflicting pressures, a generous read of the people who had to make them." }
+          - { tag: "[Fact] ", text: "<mark>10 years later</mark> he says the calligraphy skills 'came back' when designing the first Macintosh — this is the payoff claim, but he hasn't yet explained how it was applied." }
+          - { tag: "[Action] ", text: "Note the upcoming Macintosh connection: expect him to claim Mac's typography came from Reed's calligraphy class — a claim to check for accuracy." }
+      - at: 10
+        time: "18:44:26"
+        points:
+          - { tag: "[Advice] ", text: "Verify the claim that the Mac was the first with beautiful typography — early computers like the Xerox Alto had proportional fonts, so the 'first' label needs checking." }
   features:
     title: "It follows the conversation so you can stay in it."
     live:
@@ -161,31 +164,34 @@ zh:
     transcript_label: "实时转写"
     advice_label: "MeetMi"
     tag: "MeetMi"
-    caption: "根据一次真实使用改编：在 Mac 上放一节创业课的录像。右边的卡片原文是英文，这里翻成了中文。"
+    caption: "真实输出，和下面几张截图出自同一场：Mac 上放的一段毕业典礼演讲。右边卡片原文是英文，这里翻成了中文。"
     lines:
-      - { at: 0, time: "23:54:15", text: "It's actually, like, one of your core responsibilities." }
-      - { at: 1, time: "23:54:18", text: "Ben Horowitz likes to say, like, the number one role of the CEO is managing your own psychology." }
-      - { at: 2, time: "23:54:18", text: "It's absolutely true." }
-      - { at: 3, time: "23:54:18", text: "Make sure you do it." }
-      - { at: 5, time: "23:54:45", text: "If you've read my Medium post, you know, it's coming." }
-      - { at: 6, time: "23:54:49", text: "You guys, a second, read this quote." }
-      - { at: 8, time: "23:55:01", text: "So this really resonates with me." }
-      - { at: 9, time: "23:55:08", text: "And one thing I'd point out is, you know, reality of these decisions is pretty nuanced." }
-      - { at: 10, time: "23:55:12", text: "They probably just had, like, really difficult decision in front of them, and people pulling them in multiple directions." }
+      - { at: 0, time: "18:43:23", text: "Reed College at that time offered perhaps the best calligraphy instruction in the country." }
+      - { at: 1, time: "18:43:30", text: "Every poster, every label on every drawer was beautifully hand calligraphed." }
+      - { at: 3, time: "18:43:38", text: "I decided to take a calligraphy class to learn how to do this." }
+      - { at: 4, time: "18:43:46", text: "I learned about seraph and sand seraph typefaces about varying the amount of space between different letter combinations, about what makes great typography great." }
+      - { at: 6, time: "18:44:01", text: "None of this had even a hope of any practical application in my life." }
+      - { at: 7, time: "18:44:09", text: "But 10 years later, when we were designing the first Macintosh computer, it all came back to me." }
+      - { at: 9, time: "18:44:13", text: "It was the first computer with beautiful typography." }
     cards:
-      - at: 4
-        time: "23:54:30"
+      - at: 2
+        time: "18:43:23"
         points:
-          - { tag: "【事实】", text: "Dustin 引用了 Ben Horowitz 的话：CEO 最重要的工作是管好自己的心态，还说这“千真万确”。点了名，但没给出处。" }
-          - { tag: "【建议】", text: "要是你在考虑创业，把管好自己的压力当成一件正事，从一开始就安排上。" }
-      - at: 7
-        time: "23:54:52"
+          - { tag: "【事实】", text: "他开始讲书法这个例子了——当年 Reed College 的<mark>书法课大概是全美最好的</mark>。" }
+      - at: 5
+        time: "18:43:55"
         points:
-          - { tag: "【行动项】", text: "Dustin 提到他在 Medium 上写的文章，还让全班读了一段话。这段可以回头找来看看。" }
-      - at: 11
-        time: "23:55:15"
+          - { tag: "【事实】", text: "他说的应该是<mark>衬线体和无衬线体</mark>，转写成 “seraph” 是听错了。" }
+          - { tag: "【事实】", text: "他在讲字体排印的基本功：字距怎么调、什么样的排印才算好，这些都是那门书法课上学的。" }
+      - at: 8
+        time: "18:44:10"
         points:
-          - { tag: "【事实】", text: "Dustin 认为，管理层的决定多半是在几方压力之间做的艰难取舍。对做决定的人来说，这是一种很体谅的看法。" }
+          - { tag: "【事实】", text: "他说<mark>十年后</mark>做第一台 Macintosh 时，这些书法功底又回来了——这是他要收的那个果，但还没说具体怎么用上的。" }
+          - { tag: "【行动项】", text: "留意接下来那个 Macintosh 的说法：他大概会说 Mac 的字体排印来自 Reed 的书法课，这个值得核一下。" }
+      - at: 10
+        time: "18:44:26"
+        points:
+          - { tag: "【建议】", text: "“Mac 是第一台有漂亮字体排印的电脑”这句可以查一下——更早的 Xerox Alto 就有等宽之外的比例字体，“第一”这个说法站不站得住得看证据。" }
   features:
     title: "它帮你盯着，你专心开会。"
     live:
