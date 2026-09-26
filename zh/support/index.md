@@ -5,7 +5,7 @@ title: MeetMi 支持
 
 # MeetMi 支持
 
-版本：`managed-ai-apple-pages-v2`<br>
+版本：`managed-ai-apple-pages-v3`<br>
 适用于 App Store 上的 MeetMi Managed AI，macOS 与 iPhone 版（同一记录、共用一份订阅）。
 
 [English](../../support/) · [隐私政策](../privacy/)
@@ -32,8 +32,9 @@ MeetMi 在设备上转写会议；用户同意后，会把转写、问题和相�
 
 ## 权限
 
-- 麦克风：会议开始后听使用者发言。iPhone 上这是唯一的音源，把手机放在扬声器旁或在会议室里使用。
-- macOS 屏幕与系统音频：听会议软件里的对方声音。原始音频不保存。iPhone 没有系统音频采集。
+- 麦克风：会议开始后听使用者发言。iPhone 上这是默认音源，把手机放在扬声器旁或在会议室里使用。
+- macOS 屏幕与系统音频：听会议软件里的对方声音。原始音频不保存。
+- iPhone 系统音频（1.0.1 版起，iOS 27）：可选，在「设置 → 会议 → 音频采集」里选择。每场会议开始时 iOS 会弹出共享选择框，请选「整个屏幕」。MeetMi 只取声音，不保存画面。
 - 用户选择的文件夹：读取资料并写回纪要。两端都保存 security-scoped bookmark；iPhone 上经「文件」选择器选择（iCloud Drive 或本机）。文件夹被移动或权限被撤回后，需要重新选择。
 
 系统权限不等于其他参会者的同意。用户必须完成法律或组织政策要求的告知。
@@ -65,7 +66,7 @@ MeetMi 在设备上转写会议；用户同意后，会把转写、问题和相�
 ## 已知限制
 
 - 需要 macOS 26 或 iOS 26 及更新版本（只做 iPhone，本版没有 iPad 布局）。
-- iPhone 只用麦克风；iOS 上不存在系统音频采集。
+- iPhone 系统音频能听到手机播放的声音（视频、讲座、播客），但听不到通话：iOS 不会把电话、FaceTime、微信、Zoom 等通话声音交给任何 App。要听通话，请用「仅麦克风」并把通话开外放。iOS 26 上，以及在 iPad 上（iPad 以兼容模式运行 iPhone 版），只有麦克风。
 - 中国大陆在独立法律评估完成前排除。
 - 模拟器没有本机语音模型。
 - 这些页面已发布在 https://kinlu.github.io/meetmi/ ，对外可访问。

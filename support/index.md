@@ -5,7 +5,7 @@ title: MeetMi Support
 
 # MeetMi Support
 
-Version: `managed-ai-apple-pages-v2`<br>
+Version: `managed-ai-apple-pages-v3`<br>
 Applies to MeetMi Managed AI on the App Store, macOS and iPhone (one record, one shared subscription).
 
 [中文](../zh/support/) · [Privacy Policy](../privacy/)
@@ -32,8 +32,9 @@ If a purchase is pending family approval, local meeting features remain availabl
 
 ## Permissions
 
-- Microphone: capture the user's speech after a meeting starts. On iPhone this is the only audio source; place the phone near the speaker or use it in the room.
-- Screen and system audio on macOS: capture the other side of a meeting app. Raw audio is not stored. iPhone has no system-audio capture.
+- Microphone: capture the user's speech after a meeting starts. On iPhone this is the default; place the phone near the speaker or use it in the room.
+- Screen and system audio on macOS: capture the other side of a meeting app. Raw audio is not stored.
+- System audio on iPhone (version 1.0.1 and later, iOS 27): optional, chosen in Settings → Meeting → Audio capture. iOS shows its sharing sheet at the start of every meeting — choose the entire screen. MeetMi takes only the sound and keeps no picture.
 - User-selected folder: read workspace documents and write meeting notes. Both apps keep a security-scoped bookmark; on iPhone the folder is chosen in the Files picker (iCloud Drive or On My iPhone). If the folder moves or permission is withdrawn, choose the folder again.
 
 System permission is not consent from other participants. The user must give any notice required by law or workplace policy.
@@ -65,7 +66,7 @@ System permission is not consent from other participants. The user must give any
 ## Known limits
 
 - macOS 26 or later; iOS 26 or later (iPhone only — no iPad layout in this release).
-- iPhone: microphone only; no system-audio capture exists on iOS.
+- iPhone system audio hears what the phone plays (videos, lectures, podcasts) but not calls: iOS does not pass phone, FaceTime, WeChat, Zoom or similar call audio to any app. For a call, use Microphone only and put the call on speaker. On iOS 26, and on iPad (which runs the iPhone app in compatibility mode), the microphone is the only source.
 - Mainland China is excluded until a separate legal assessment is complete.
 - Simulator builds cannot run on-device speech models.
 - These pages are published at https://kinlu.github.io/meetmi/ and are publicly reachable.

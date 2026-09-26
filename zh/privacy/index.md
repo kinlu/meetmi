@@ -5,8 +5,8 @@ title: MeetMi 隐私政策
 
 # MeetMi 隐私政策
 
-版本：`managed-ai-apple-pages-v2`<br>
-生效日期：2026-09-19（v1：2026-08-29）<br>
+版本：`managed-ai-apple-pages-v3`<br>
+生效日期：2026-09-26（v2：2026-09-19，v1：2026-08-29）<br>
 适用范围：通过 Apple App Store 分发的 MeetMi Managed AI，macOS 与 iPhone 版。两者是同一条 App Store 记录、共用一份订阅，适用同一份政策。
 
 开发者/经营主体、地址和隐私联系方式将在开通 Apple Developer Program 后回填。在此之前，本页是 App 与商店材料必须对齐的权威草案。
@@ -25,7 +25,7 @@ MeetMi Local 是独立的 BYOK 产品：使用不同 App 身份、数据目录�
 - 原始音频不由 MeetMi 保存，也不上传到 MeetMi Worker、OpenRouter 或模型上游。
 - 语音识别与字幕翻译使用 Apple 设备端能力完成。
 - 会议转写、建议、分析、纪要、工作区索引和文档缓存默认保存在设备或用户明确选择的工作区。
-- iPhone 版只使用麦克风，不捕获其他 App 的系统音频。用户已开始的会议在锁屏后继续转写，直到用户结束或暂停。
+- iPhone 版默认只使用麦克风；iOS 26 上这也是唯一的音源。自 1.0.1 版起，在 iOS 27 上用户可以改选系统音频：每场会议开始时由 iOS 弹出系统自己的共享选择框，用户同意后 MeetMi 才会收到这台手机正在播放的声音（视频、讲座、播客）。只使用声音，屏幕画面帧到达即丢弃，不保存也不上传。iOS 不会把通话声音（电话、FaceTime、微信、Zoom 等）交给任何 App，所以这种方式听不到通话。用户已开始的会议在锁屏或切到其他 App 后继续转写，直到用户结束或暂停。
 
 ## 3. Managed 云端 AI
 

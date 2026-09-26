@@ -5,8 +5,8 @@ title: MeetMi Privacy Policy
 
 # MeetMi Privacy Policy
 
-Version: `managed-ai-apple-pages-v2`<br>
-Effective: 2026-09-19 (v1: 2026-08-29)<br>
+Version: `managed-ai-apple-pages-v3`<br>
+Effective: 2026-09-26 (v2: 2026-09-19, v1: 2026-08-29)<br>
 Applies to: MeetMi Managed AI distributed through the Apple App Store on macOS and iPhone. Both apps are one App Store record with one shared subscription and use this same policy.
 
 Developer / legal entity, postal address, and privacy contact will be filled when the Apple Developer Program account is opened. Until then this page is the canonical draft that App and store materials must match.
@@ -25,7 +25,7 @@ MeetMi Local is a separate BYOK product with a different app identity, storage, 
 - MeetMi does not save or upload raw audio.
 - Speech recognition and subtitle translation use Apple on-device capabilities.
 - Transcripts, advice, analysis, notes, workspace indexes, and extraction caches are stored on the device or in a user-selected workspace by default.
-- On iPhone the app uses the microphone only and does not capture audio from other apps. A meeting the user has started keeps transcribing while the phone is locked; it stops when the user ends or pauses it.
+- On iPhone the microphone is the default and the only audio source on iOS 26. From version 1.0.1 on iOS 27, the user may instead choose system audio: at the start of each meeting iOS shows its own sharing sheet, and once the user agrees MeetMi receives the sound the phone is playing (a video, a lecture, a podcast). Only the sound is used; screen frames are discarded as they arrive and are never stored or uploaded. iOS does not pass call audio (phone, FaceTime, WeChat, Zoom and similar) to any app, so calls cannot be heard this way. A meeting the user has started keeps transcribing while the phone is locked or another app is in front; it stops when the user ends or pauses it.
 
 ## 3. Managed cloud AI
 

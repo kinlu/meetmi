@@ -13,13 +13,13 @@
 
 en:
   meta_title: "MeetMi: help during the meeting, not after it"
-  meta_description: "MeetMi listens to your meeting and helps while it is still happening. On-device transcription, live advice, background analysis and meeting notes, for Mac. iPhone coming soon."
+  meta_description: "MeetMi listens to your meeting and helps while it is still happening. On-device transcription, live advice, background analysis and meeting notes, for Mac and iPhone."
   hero:
     title: "Help during the meeting, not after it."
     lede: "MeetMi listens along, transcribes on your device, and tells you what to ask next, what was left unanswered, and what contradicts something said earlier, while people are still talking."
-    cta: "Download for Mac"
+    cta: "Download on the App Store"
     secondary: "See what it does"
-    note: "One-week free trial. Requires macOS 26 and a Mac with Apple silicon. iPhone version coming soon."
+    note: "One-week free trial. Requires macOS 26 on a Mac with Apple silicon, or iOS 26 on iPhone."
   stage:
     status: "Meeting in progress"
     route: "Hearing English, advising in English"
@@ -108,10 +108,10 @@ en:
         body: "Rules on recording and transcription differ by place and workplace. The permission prompts on your own device are not consent from the other participants, so tell them when it applies."
     link: "Read the privacy policy"
   iphone:
-    badge: "Coming soon"
+    badge: "Now on the App Store"
     title: "MeetMi for iPhone"
     body: "For meetings in the room. Put the phone on the table, and it keeps transcribing with the screen locked. One subscription covers Mac and iPhone, with one shared credit balance."
-    note: "On iPhone, MeetMi listens through the microphone only."
+    note: "On iPhone, MeetMi listens through the microphone. From version 1.0.1 on iOS 27, it can also hear what the phone plays — but not calls."
     shots:
       - { src: "iphone-advice.webp", alt: "MeetMi on iPhone showing suggestion cards during a lecture, with a key figure highlighted." }
       - { src: "iphone-analysis.webp", alt: "The analysis tab on iPhone: overview, people, key numbers and commitments." }
@@ -124,11 +124,11 @@ en:
     points:
       - "One-week free trial with 1,000 credits"
       - "4,500 credits every month after the trial"
-      - "One subscription for Mac and, when it arrives, iPhone"
+      - "One subscription for Mac and iPhone"
       - "Cancel any time in your Apple Account"
     credits: "Credits measure how much cloud AI you use, so a longer meeting uses more. Transcription and translation happen on your device and use none."
     lapse: "If the subscription lapses or the credits run out, transcription, translation, history and export keep working. Only new AI requests stop."
-    cta: "Download for Mac"
+    cta: "Download on the App Store"
   questions:
     title: "Questions"
     items:
@@ -143,21 +143,21 @@ en:
       - q: "What happens if I cancel?"
         a: "Transcription, translation, your meeting history and export keep working. Only new AI requests stop. You manage or cancel the subscription in your Apple Account, like any App Store subscription."
       - q: "What do I need to run it?"
-        a: "macOS 26 or later on a Mac with Apple silicon (M1 or newer). The iPhone version is coming soon."
+        a: "macOS 26 or later on a Mac with Apple silicon (M1 or newer), or iOS 26 or later on iPhone."
   closing:
     title: "Bring it to your next meeting."
-    cta: "Download for Mac"
+    cta: "Download on the App Store"
     note: "One-week free trial"
 
 zh:
   meta_title: "MeetMi：边开会，边帮你"
-  meta_description: "MeetMi 跟你一起听会，开会的时候就帮你：本机转写、实时提醒、后台分析、会后纪要。Mac 版已上架，iPhone 版即将上线。"
+  meta_description: "MeetMi 跟你一起听会，开会的时候就帮你：本机转写、实时提醒、后台分析、会后纪要。Mac 和 iPhone 都能用。"
   hero:
     title: "边开会，边帮你。"
     lede: "MeetMi 跟你一起听会，在你自己的电脑上把话转成文字。大家还在说的时候，它就提醒你：接下来该问什么，哪个问题被绕过去了，哪句话跟前面说的对不上。"
-    cta: "下载 Mac 版"
+    cta: "去 App Store 下载"
     secondary: "看看它能做什么"
-    note: "免费试用一周。需要 macOS 26，M1 或更新的 Mac。iPhone 版即将上线。"
+    note: "免费试用一周。Mac 需要 macOS 26 和 M1 或更新的芯片，iPhone 需要 iOS 26。"
   stage:
     status: "会议进行中"
     route: "听英语，用中文给建议"
@@ -246,10 +246,10 @@ zh:
         body: "各地法律、各家公司对录音和转写的规定不一样。你在系统弹窗里点的“允许”，不代表其他参会的人也同意了。该说的时候，提前跟大家说一声。"
     link: "看看完整的隐私政策"
   iphone:
-    badge: "即将上线"
+    badge: "已上架 App Store"
     title: "iPhone 版 MeetMi"
     body: "当面开会的时候用。手机往桌上一放就行，锁了屏也会接着转写。订阅一次，Mac 和 iPhone 都能用，额度也是共用的。"
-    note: "iPhone 上只用麦克风听。"
+    note: "iPhone 上默认用麦克风听。从 1.0.1 版起，iOS 27 上也能听手机自己播放的声音，但听不到通话。"
     shots:
       - { src: "iphone-advice.webp", alt: "iPhone 上的 MeetMi 在一场演讲中给出提醒卡片，关键数字有高亮。" }
       - { src: "iphone-analysis.webp", alt: "iPhone 上的分析页：概览、人物、关键数字和承诺。" }
@@ -262,11 +262,11 @@ zh:
     points:
       - "先免费用一周，送 1,000 额度"
       - "之后每月 4,500 额度"
-      - "订阅一次，Mac 能用，之后的 iPhone 版也能用"
+      - "订阅一次，Mac 和 iPhone 都能用"
       - "随时能在 Apple 账户里取消"
     credits: "额度就是云端 AI 的用量，会开得越长，用得越多。转写和翻译在本机做，不花额度。"
     lapse: "订阅到期了，或者额度用完了，转写、翻译、历史记录和导出都还能用，只是 AI 功能会先停下来。"
-    cta: "下载 Mac 版"
+    cta: "去 App Store 下载"
   questions:
     title: "常见问题"
     items:
@@ -280,9 +280,9 @@ zh:
         a: "转写用的是 Apple 的本机语音模型，开会时能自动听出大家说的是哪种语言。MeetMi 用什么语言写，你可以另外选：简体中文、繁体中文、英语、日语、韩语、德语、法语、西班牙语、葡萄牙语、意大利语。所以听英语、用中文给你建议，完全没问题。"
       - q: "取消订阅了会怎么样？"
         a: "转写、翻译、会议历史和导出都还能用，只是 AI 功能停了。订阅在你的 Apple 账户里管理和取消，跟别的 App Store 订阅一样。"
-      - q: "需要什么样的电脑？"
-        a: "macOS 26 或更新的系统，M1 或更新芯片的 Mac。iPhone 版即将上线。"
+      - q: "需要什么样的设备？"
+        a: "Mac：macOS 26 或更新的系统，M1 或更新的芯片。iPhone：iOS 26 或更新的系统。"
   closing:
     title: "下次开会，带上它。"
-    cta: "下载 Mac 版"
+    cta: "去 App Store 下载"
     note: "免费试用一周"
