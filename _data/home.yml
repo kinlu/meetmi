@@ -73,11 +73,11 @@ en:
       body: "Live transcription and translation use Apple's on-device speech models. Raw audio is never saved and never uploaded."
     bothsides:
       title: "It hears the other side of the call"
-      body: "MeetMi can transcribe the audio coming out of your Mac, so remote participants are captured whichever app the call is in. macOS asks for its screen-recording permission for that. You can decline and use the microphone alone."
+      body: "MeetMi can transcribe the audio coming out of your Mac, so remote participants are captured whichever app the call is in. macOS asks for its Screen & System Audio Recording permission for that. You can decline and use the microphone alone."
   notes:
     title: "Notes written before you stand up."
-    body: "When the meeting ends, MeetMi drafts the notes from the whole transcript, not from a summary of a summary: an overview, the discussion, decisions and action items."
-    export: "Export the notes, the analysis and the transcript to Markdown, Word or Pages."
+    body: "When the meeting ends, MeetMi drafts the notes from the transcript itself and the running analysis: an overview, the discussion, decisions and action items."
+    export: "Export the notes, the analysis and the transcript as Markdown or plain text."
     alt: "A finished meeting note with an overview, discussion points, decisions and action items."
   material:
     title: "It reads your folder before it speaks."
@@ -211,11 +211,11 @@ zh:
       body: "用的是 Apple 装在你电脑里的语音模型。声音不会存下来，也不会传出去。"
     bothsides:
       title: "对方说的话，它也听得到"
-      body: "MeetMi 能把 Mac 里放出来的声音也转成文字，所以不管你用哪个软件开会，对方说的话都记得下来。这需要 macOS 的“屏幕录制”权限。不想给也行，只用麦克风照样能用。"
+      body: "MeetMi 能把 Mac 里放出来的声音也转成文字，所以不管你用哪个软件开会，对方说的话都记得下来。这需要 macOS 的“屏幕与系统音频录制”权限。不想给也行，只用麦克风照样能用。"
   notes:
     title: "会一开完，纪要就写好了。"
-    body: "纪要是照着整场会的完整记录写的，不是拿几段摘要再拼一遍。里面有概览、讨论了什么、定了什么、谁要做什么。"
-    export: "纪要、分析和转写都能导出成 Markdown、Word 或 Pages。"
+    body: "纪要是照着会议的原始转写，再加上会中一直在更新的分析写出来的。里面有概览、讨论了什么、定了什么、谁要做什么。"
+    export: "纪要、分析和转写都能导出成 Markdown 或纯文本。"
     alt: "一份写好的会议纪要，标题取自会议内容，有概览、讨论要点、决定和待办事项。"
   material:
     title: "它会先看你的资料，再给建议。"
